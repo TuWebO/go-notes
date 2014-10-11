@@ -58,6 +58,7 @@ Go Language learning notes
 ###Arrays & slices
 [Go slices usage and internals](http://blog.golang.org/go-slices-usage-and-internals)  
 Arrays have their place, but they're a bit inflexible, so you don't see them too often in Go code. Slices, though, are everywhere. They build on arrays to provide great power and convenience.  
+
 1. An array type definition specifies a length and an element type.  
    Unlike an array type, a slice type has no specified length.  
    ```Go
