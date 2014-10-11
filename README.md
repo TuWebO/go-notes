@@ -68,9 +68,10 @@ Arrays have their place, but they're a bit inflexible, so you don't see them too
    Or  
    b := [...]string{"Penn", "Teller"}
    ```  
-   ```Go
+
    
-   // A slice literal is declared just like an array literal, except you leave out the element count:    
+2. A slice literal is declared just like an array literal, except you leave out the element count:  
+   ```Go
    letters := []string{"a", "b", "c", "d"}  
    // A slice can be created with the built-in function called make, which has the signature,  
    func make([]T, len, cap) []T  
