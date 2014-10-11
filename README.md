@@ -55,3 +55,23 @@ Go Language learning notes
    c, python, java := true, false, "no!"
    ```
 
+###Arrays & slices
+[Go slices usage and internals](http://blog.golang.org/go-slices-usage-and-internals)  
+1. An array type definition specifies a length and an element type.  
+   Unlike an array type, a slice type has no specified length.  
+   ```Go
+   
+   // An array literal can be specified like so:  
+   b := [2]string{"Penn", "Teller"}  
+   Or  
+   b := [...]string{"Penn", "Teller"}
+   ```  
+   ```Go
+   
+   // A slice literal is declared just like an array literal, except you leave out the element count:    
+   letters := []string{"a", "b", "c", "d"}  
+   // A slice can be created with the built-in function called make, which has the signature,  
+   func make([]T, len, cap) []T  
+   // The make function takes a type, a length, and an optional capacity. When called, make allocates an array and   returns a slice that refers to that array.  
+   
+   ```  
