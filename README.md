@@ -12,8 +12,9 @@ Go Language learning notes
 2. The var statement declares a list of variables; as in function argument lists, the type is last.  
    `var c, python, java bool`
 3. A var declaration can include initializers, one per variable. If an initializer is present, the type can be omitted; the variable will take the type of the initializer.  
-   ```
-   var i, j int = 1, 2  
+   ```go
+   var i, j int = 1, 2
+   
    var c, python, java = true, false, "no!"
    ```
 
