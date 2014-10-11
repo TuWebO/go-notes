@@ -72,6 +72,8 @@ Go Language learning notes
    letters := []string{"a", "b", "c", "d"}  
    // A slice can be created with the built-in function called make, which has the signature,  
    func make([]T, len, cap) []T  
-   // The make function takes a type, a length, and an optional capacity. When called, make allocates an array and   returns a slice that refers to that array.  
-   
+   // The make function takes a type, a length, and an optional capacity. When called, make allocates an array and returns a slice that refers to that array.  
+   var s []byte
+   s = make([]byte, 5, 5)
+   // s == []byte{0, 0, 0, 0, 0}
    ```  
