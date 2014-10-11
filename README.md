@@ -28,9 +28,16 @@ Go Language learning notes
    ```  
 2. A var statement can be at package or function level.  
 3. The var statement declares a list of variables; as in function argument lists, the type is last.  
+   Also note that variable declarations may be "factored" into blocks
    ```Go
    
-   var c, python, java bool
+   var c, python, java bool  
+   var (
+	  ToBe   bool       = false
+	  MaxInt uint64     = 1<<64 - 1
+	  z      complex128 = cmplx.Sqrt(-5 + 12i)
+   )
+   
    ```  
 4. A var declaration can include initializers, one per variable. If an initializer is present, the type can be omitted; the variable will take the type of the initializer.  
    ```Go
